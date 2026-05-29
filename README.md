@@ -84,7 +84,6 @@ private String species;
 
 The project uses:
 - private
-- protected
 - public
 
 Example:
