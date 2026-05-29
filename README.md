@@ -23,7 +23,7 @@ The project demonstrates important Java OOP concepts such as:
 
 ---
 
-# Project Structure
+## Project Structure
 
 ```text
 src/
@@ -35,29 +35,28 @@ src/
 │     └── Monkey.java
 │
 ├── service/
-│     ├── Zookeeper.java
+│     ├── ZooKeeper.java
 │     └── TicketCounter.java
 │
-└── ZooManagement.java
+└── Main.java
+```
 
+---
 
+## OOP Concepts Demonstrated
 
-# OOP Concepts Demonstrated
-
-## 1. Classes and Objects
+### 1. Classes and Objects
 
 Classes used:
-
-* Animal
-* Lion
-* Elephant
-* Monkey
-* Zookeeper
-* TicketCounter
+- Animal
+- Lion
+- Elephant
+- Monkey
+- ZooKeeper
+- TicketCounter
 
 Objects are created inside:
-
-* ZooManagement.java
+- Main.java
 
 Example:
 
@@ -67,15 +66,11 @@ Animal lion = new Lion("Simba", 5);
 
 ---
 
-## 2. Encapsulation
+### 2. Encapsulation
 
 Encapsulation is implemented using private variables and getters/setters.
 
-File:
-
-* Animal.java
-
-Example:
+File: Animal.java
 
 ```java
 private String name;
@@ -85,13 +80,12 @@ private String species;
 
 ---
 
-## 3. Access Modifiers
+### 3. Access Modifiers
 
 The project uses:
-
-* private
-* protected
-* public
+- private
+- protected
+- public
 
 Example:
 
@@ -103,86 +97,74 @@ public void displayInfo();
 
 ---
 
-## 4. Inheritance
+### 4. Inheritance
 
 Inheritance is demonstrated by child classes extending the Animal superclass.
 
 Files:
-
-* Lion.java
-* Elephant.java
-* Monkey.java
+- Lion.java
+- Elephant.java
+- Monkey.java
 
 Example:
 
 ```java
-public class Lion extends Animal{
-    
-}
+public class Lion extends Animal
 ```
 
 ---
 
-## 5. Abstract Class
+### 5. Abstract Class
 
 Animal is an abstract class because generic animals should not be created directly.
 
-File:
-
-* Animal.java
-
-Example:
+File: Animal.java
 
 ```java
-public abstract class Animal{
-}
+public abstract class Animal
 ```
 
 ---
 
-## 6. Method Overriding (Runtime Polymorphism)
+### 6. Method Overriding (Runtime Polymorphism)
 
 Each animal overrides the makeSound() method.
 
 Files:
-
-* Lion.java
-* Elephant.java
-* Monkey.java
+- Lion.java
+- Elephant.java
+- Monkey.java
 
 Example:
 
 ```java
 @Override
-public void makeSound();
+public void makeSound()
 ```
 
 ---
 
-## 7. Method Overloading (Compile-Time Polymorphism)
+### 7. Method Overloading (Compile-Time Polymorphism)
 
 Method overloading is demonstrated inside:
-
-* Zookeeper.java
-* TicketCounter.java
+- ZooKeeper.java
+- TicketCounter.java
 
 Examples:
 
 ```java
 feedAnimal(Animal animal);
-
 feedAnimal(Animal animal, String food);
 ```
 
 ```java
 sellTicket();
-
 sellTicket(int visitors);
 ```
 
 ---
 
-## 8. Runtime Polymorphism
+### 8. Runtime Polymorphism
 
 Superclass references are used to store subclass objects.
 
@@ -194,58 +176,49 @@ Animal lion = new Lion("Simba", 5);
 
 ---
 
-## 9. Packages
+### 9. Packages
 
-Packages are used to organize the project.
-
-Packages:
-
-* model
-* service
+Packages are used to organize the project:
+- model
+- service
 
 ---
 
-# Technologies Used
+## Technologies Used
 
-* Java
-* IntelliJ IDEA
-* OOP Principles
-
----
-
-# Features
-
-* User input using Scanner
-* Animal management
-* Feeding simulation
-* Ticket selling simulation
-* Runtime polymorphism
+- Java
+- IntelliJ IDEA
+- OOP Principles
 
 ---
 
-# How to Compile
+## Features
 
-Open terminal inside the src folder.
+- User input using Scanner
+- Animal management
+- Feeding simulation
+- Ticket selling simulation
+- Runtime polymorphism
 
-Compile the project using:
+---
+
+## How to Compile
 
 ```bash
-javac model/*.java service/*.java ZooManagement.java
+javac model/*.java service/*.java Main.java
 ```
 
 ---
 
-# How to Run
-
-Run the project using:
+## How to Run
 
 ```bash
-java ZooManagement
+java Main
 ```
 
 ---
 
-# Example Output
+## Example Output
 
 ```text
 === ZOO ANIMALS ===
@@ -276,11 +249,7 @@ John is cleaning the zoo.
 
 ---
 
-# Author
+## Author
 
-Danawit Melkamu
-
+Danawit Melkamu  
 Course: Object-Oriented Programming in Java
-
-```
-```
